@@ -70,7 +70,7 @@ Générez un signal sinusoïdal avec ses harmoniques qui sont passées en param�
 Par exemple, en faisant :
 
 ```python
-sig = sine_with_overtones(440, ((2, 0.5), (3, 0.25), (4, 0.1)))
+sig = sine_with_overtones(440, 1, ((2, 0.5), (3, 0.25), (4, 0.1)), 10)
 ```
 
 On obtiendrait un signal dont la fondamentale est 440 Hz, et dont la première harmonique (ou *partielle* si on veut être pédantique) est 2 fois la fréquence fondamentale et moitié moins forte. La deuxième harmonique est trois fois la fondamentale et 25% aussi fort, etc.
